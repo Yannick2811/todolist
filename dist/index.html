@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">To<span class="accent">Do</span>List</div>
+    </header>
+    <main>
+        <div id="sidebar">
+            <div id="project-container">
+            <button id="main-project" class="sidebar-button">Main To-Dos</button>
+            </div>
+            <button id="add-project-button" class="sidebar-button">+ New Project</button>
+            <form onsubmit="return false">
+                <div id="new-project-input-container">
+                <input id="project-name-input" type="text" placeholder="Your Project Name">
+                <button id="project-submit-button" type="submit" class="submit">Submit</button>
+                </div>
+            </form>
+
+        </div>
+        <div id="main-content">
+            <h2 id="main-to-dos-header">Main To-Dos</h2>
+            <div id="tasks-container" class="tasks-container">
+                <ul id='task-list' class="task-list">
+                    
+                </ul>
+            </div>
+            <button id="add-task" class="add-task">+ Add Task</button>
+            <div id="form-container">
+            <form onsubmit="return false"> 
+            <div id="task-input-container" class="task-input-container">
+                <input id="task-input" type="text">
+                <div id="button-container" class="button-container">
+                    <button id="submit" class="submit" type="submit">Submit</button>
+                    <button id="cancel" class="cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+        </div>
+        <p class="alert-paragraph">Please input your task!</p>
+    </main>
+    <footer>©Yannick Fürsich for Odin Project 2022</footer>
+</body>
+</html>
